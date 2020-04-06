@@ -1,2 +1,2 @@
-# epg
+# EGP
 English Problem Generator
