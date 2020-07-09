@@ -31,6 +31,12 @@ dependencies:
   # import by Kim Jiun
   http: ^0.12.0+4
   dio: ^3.0.9
+  flutter_launcher_icons: ^0.7.5
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.png"
 
 dev_dependencies:
   flutter_test:

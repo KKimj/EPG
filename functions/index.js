@@ -18,6 +18,11 @@ exports.blk = functions.https.onRequest((request, response) => {
 });
    
    
+exports.problems = functions.https.onRequest( (resquest, response) =>
+{
+    //
+
+});
 
 
 var shuffleRandom = function (n)
@@ -25,14 +30,14 @@ var shuffleRandom = function (n)
     var ar = [];
     var temp = 0;
     var rnum = 0.0;
-   
+    var i = 0;
     //전달받은 매개변수 n만큼 배열 생성 ( 1~n )
-    for(var i=1; i<=n; i++){
+    for(i=1; i<=n; i++){
         ar.push(i);
     }
 
     //값을 서로 섞기
-    for(var i=0; i< ar.length ; i++)
+    for(i=0; i< ar.length ; i++)
     {
         rnum = Math.floor(Math.random() *n); //난수발생
         temp = ar[i];
@@ -82,7 +87,7 @@ var makeproblem_blk0 = function(proString, filename, num_problem)
     var ans = [];
     var tmp = [];
 
-    while(idx_start != -1 && idx_end != -1)
+    while(idx_start !== -1 && idx_end !== -1)
     {     
         problem_nums++;
 
